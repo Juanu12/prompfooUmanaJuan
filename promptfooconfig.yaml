@@ -10,16 +10,20 @@ prompts:
 providers:
   - id: google:gemini-2.5-flash
     config:
-      apiKey: 
+      apiKey: AIzaSyDpzT3XyY_GrsZyW-gcX-X3PNd75ZZ3_XY
   
 
 tests:
   - vars:
-      inquiry: "I have a problem with my order"
+      inquiry: ". Soy un camper, programador junior perteneciente a campuslands , iniciando mi proceso de formación, perteneciente a la ruta NodeJs, me gustaría saber ¿Cuánto tiempo puede tardar un proyecto?, quiero que me entregues un texto informativo referente a cada proyecto según su skill , su plazo y dificultad."
       context: file://context.js
 
   - vars:
-      inquiry: "I want to return my widget"
+      inquiry: ". Soy un camper, programador junior perteneciente a campuslands , iniciando mi proceso de formación, perteneciente a la ruta NodeJs, me gustaría saber ¿Cuánto tiempo puede tardar un proyecto?, quiero que me entregues un texto informativo referente a cada proyecto según su skill , su plazo y dificultad."
+      context: file://context.js     
+
+  - vars:
+      inquiry: ". Soy un programador junior perteneciente a campuslands , perteneciente a la sedecajasan , con un número de identificación xxxx , ¿Con quién puedo gestionar ingresohacia zona franca?, quiero que me entregues el contacto para poder entrar a zonafranca"
       # See how to use dynamic context to e.g. use a vector store https://promptfoo.dev/docs/guides/evaluate-rag/#using-dynamic-context
       context: file://context.js
     assert:
