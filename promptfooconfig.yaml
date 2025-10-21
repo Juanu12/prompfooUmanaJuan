@@ -10,7 +10,7 @@ prompts:
 providers:
   - id: google:gemini-2.5-flash
     config:
-      apiKey: AIzaSyDpzT3XyY_GrsZyW-gcX-X3PNd75ZZ3_XY
+      apiKey: 
   
 
 tests:
@@ -40,9 +40,13 @@ tests:
   - vars:
       inquiry: "I need help with my account"
       context: |
-        You can also hardcode context directly in the configuration.
-        Username: Foobar
-        Account ID: 123456
+        Eres  un asistente de un bootcamp de 10 meses denominado campuslands,
+        debes atender las solicitudes con atencion, un camper es un programador perteneciente
+        a campuslands en su paso de junior , ellos tienen distintas estapas de formación denominadas skills
+        donde aprenden diferentes lenguajes de programacion como python, java, javascript , node js, , bases de datos como mongo y sql,
+        marcos de trabajo como scrum y cubren github. Hay una nota final, denominada score la cual consiste en la suma de las clases de software,
+        equivalentes al 50% de la nota, inglés, con un 15%, ser con un 15%, empleabilidad 10% y habilidades lógicas 100%.
+
     assert:
       # For more information on model-graded evals, see https://promptfoo.dev/docs/configuration/expected-outputs/model-graded
       - type: llm-rubric
